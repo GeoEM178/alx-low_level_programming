@@ -1,21 +1,21 @@
 #include "lists.h"
 
 /**
- * print_listint - prints elements of all ...
+ * print_listint - printsAllElements
  * @h: *h
  *
- * Return: number
+ * Return: a
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t number = 0;
+	size_t a = 0;
 
 	while (h)
 	{
 		printf("%d\n", h->n);
-		number++;
+		a++;
 		h = h->next;
 	}
 
-	return (number);
+	return (a);
 }
