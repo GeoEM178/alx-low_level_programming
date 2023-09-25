@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - freeing ...
- * @h: first node pointing
+ * free_listint_safe - removing or freeing
+ * @h: first node pointer ...
  *
- * Return: elementes numberr
+ * Return: elements nomber.
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t length = 0;
+	size_t width = 0;
 	int diff;
 	listint_t *temp;
 
@@ -23,18 +23,18 @@ size_t free_listint_safe(listint_t **h)
 			temp = (*h)->next;
 			free(*h);
 			*h = temp;
-			length++;
+			width++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			length++;
+			width++;
 			break;
 		}
 	}
 
 	*h = NULL;
 
-	return (length);
+	return (width);
 }
