@@ -1,32 +1,32 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - ..................... ........... ..
- * @head: search ... .. for
+ * find_listint_loop - try to find 
+ * @head: searching for some
  *
- * Return: .. ... 
+ * Return: result of search i think
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slwo = head;
-	listint_t *go = head;
+	listint_t *poor = head;
+	listint_t *rich = head;
 
 	if (!head)
 		return (NULL);
 
-	while (slwo && go && go->next)
+	while (poor && rich && rich->next)
 	{
-		go = go->next->next;
-		slwo = slwo->next;
-		if (go == slwo)
+		rich = rich->next->next;
+		poor = poor->next;
+		if (rich == poor)
 		{
-			slwo = head;
-			while (slwo != go)
+			poor = head;
+			while (poor != rich)
 			{
-				slwo = slwo->next;
-				go = go->next;
+				poor = poor->next;
+				rich = rich->next;
 			}
-			return (go);
+			return (rich);
 		}
 	}
 
