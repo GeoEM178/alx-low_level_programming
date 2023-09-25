@@ -1,21 +1,21 @@
 #include "lists.h"
 
 /**
- * sum_listint - calculates all data   (sum)
- * @head: node at the first
+ * sum_listint - calculates all data   (add)
+ * @head: node atTheFirstI
  *
- * Return: result
+ * Return: result add
  */
 int sum_listint(listint_t *head)
 {
-	int suming = 0;
+	int add = 0;
 	listint_t *temp = head;
 
 	while (temp)
 	{
-		suming += temp->n;
+		add += temp->n;
 		temp = temp->next;
 	}
 
-	return (suming);
+	return (add);
 }
