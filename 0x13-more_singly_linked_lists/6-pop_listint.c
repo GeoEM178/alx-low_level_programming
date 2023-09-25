@@ -1,23 +1,23 @@
 #include "lists.h"
 
 /**
- * pop_listint -delete node at the head
- * @head: pointer ...
+ * pop_listint -delete nodeAtThe head
+ * @head: pointer forN
  *
- * Return: deleted data
+ * Return: deleted c
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
-	int number;
+	int c;
 
 	if (!head || !*head)
 		return (0);
 
-	number = (*head)->n;
+	c = (*head)->n;
 	temp = (*head)->next;
 	free(*head);
 	*head = temp;
 
-	return (number);
+	return (c);
 }
