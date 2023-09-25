@@ -1,20 +1,20 @@
 #include "lists.h"
 
 /**
- * listint_len - returns length
- * @h: listint_t linked list
+ * listint_len - b returns length
+ * @h: listint_t linked list b
  *
- * Return: nudes number ...
+ * Return: nudesNumber b
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t number = 0;
+	size_t b = 0;
 
 	while (h)
 	{
-		number++;
+		b++;
 		h = h->next;
 	}
 
-	return (number);
+	return (b);
 }
