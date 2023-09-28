@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * get_bit - get the value of a bit at a given index
- * @n: number to evaluate
+ * get_bit - bit value
+ * @n: get num
  * @index: index starting from 0, of the bit we want to get
- * Return: Value of bit at index, or -1 if error
+ * Return: bit, or -1 if an error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int hold;
+	unsigned long int wat;
 
 	if (index > 64)
 		return (-1);
 
-	hold = n >> index;
+	wat = n >> index;
 
-	return (hold & 1);
+	return (wat & 1);
 }
