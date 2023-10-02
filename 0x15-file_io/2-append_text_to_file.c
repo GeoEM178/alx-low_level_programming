@@ -18,7 +18,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (lennnl = 0; text_content[len];)
+		for (lennnl = 0; text_content[lennnl];)
 			lennnl++;
 	}
 
