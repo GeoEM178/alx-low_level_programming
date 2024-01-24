@@ -18,7 +18,7 @@ def island_perimeter(grid):
     kool = 0
 
     for i in range(absd):
-        for j in range(bet):
+        for j in range(ard):
             if grid[i][j] == 1:
                 kool += 1
                 if (j > 0 and grid[i][j - 1] == 1):
